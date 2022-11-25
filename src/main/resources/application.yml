@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://nagarro1-server.database.windows.net:1433;database=library;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: nagarroadmin
+    password: nagarro@123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+server:
+  servlet:
+    context-path: /lms
+  
+ 
+  
+  
